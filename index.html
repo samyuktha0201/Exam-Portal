@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registration Form</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h2>Registration Form</h2>
+    <form id="registrationForm">
+      <div class="form-group">
+        <label for="firstName">First Name <span class="red">*</span></label>
+        <input type="text" id="firstName" name="firstName" required>
+        <small class="error" id="firstNameError"></small>
+      </div>
+
+      <div class="form-group">
+        <label for="lastName">Last Name <span class="red">*</span></label>
+        <input type="text" id="lastName" name="lastName" required>
+        <small class="error" id="lastNameError"></small>
+      </div>
+
+      <div class="form-group">
+        <label for="email">Email <span class="red">*</span></label>
+        <input type="email" id="email" name="email" required>
+        <small class="error" id="emailError"></small>
+      </div>
+
+      <div class="form-group">
+        <label for="contactNumber">Contact Number <span class="red">*</span></label>
+        <input type="text" id="contactNumber" name="contactNumber" required>
+        <small class="error" id="contactError"></small>
+      </div>
+
+      <div class="form-group">
+        <label for="dob">Date of Birth <span class="red">*</span></label>
+        <input type="date" id="dob" name="dob" required>
+        <small class="error" id="dobError"></small>
+      </div>
+
+      <div class="form-group">
+        <label for="password">Password <span class="red">*</span></label>
+        <input type="password" id="password" name="password" required>
+        <small class="error" id="passwordError"></small>
+      </div>
+
+      <div class="form-group">
+        <label for="confirmPassword">Confirm Password <span class="red">*</span></label>
+        <input type="password" id="confirmPassword" name="confirmPassword" required>
+        <small class="error" id="confirmPasswordError"></small>
+      </div>
+
+      <div class="form-group">
+        <label><input type="checkbox" id="terms"> Accept Terms & Conditions <span class="red">*</span></label>
+        <div id="termsText">
+          <span id="termsShort">Welcome to our website! These Terms & Conditions outline the rules and regulations for the use of our services.
+            </span>
+          <span id="termsFull" style="display: none;">You must be at least 18 years old to use our website. You agree to use the website only for lawful purposes and in
+            accordance with these Terms & Conditions. You must not use the website in any way that may damage, disable, or
+            impair the website or interfere with any other party's use and enjoyment of the website.</span>
+          <span id="readMore" class="read-more" style="color: blue; cursor: pointer;">Read more</span>
+          <span id="readLess" class="read-more" style="color: blue; cursor: pointer; display: none;">Read less</span>
+        </div>
+        <small class="error" id="termsError"></small>
+      </div>
+      
+
+      <div class="form-group">
+      <button type="submit"><a href="index1.html">Submit</button></a>
+        <button type="button" id="clearBtn">Clear</button>
+      </div>
+    </form>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

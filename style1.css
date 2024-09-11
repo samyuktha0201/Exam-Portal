@@ -1,0 +1,57 @@
+body {
+    font-family: Arial, sans-serif;
+  }
+  
+  .container {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+  }
+  
+  h2 {
+    text-align: center;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  textarea {
+    width: 100%;
+    padding: 8px;
+    font-size: 14px;
+  }
+  
+  .timer {
+    font-size: 18px;
+    font-weight: bold;
+    color: red;
+    position: fixed; /* Fixed position to stay at the top */
+    top: 10px; /* Adjust the distance from the top */
+    right: 20px; /* Adjust the distance from the right */
+    background-color: white; /* Optional: background color for visibility */
+    padding: 5px 10px;
+    border-radius: 5px; /* Rounded corners for a clean look */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional shadow for depth */
+  }
+  
+  
+  .popup {
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 15px;
+    position: fixed;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 5px;
+  }
+  
+  #error {
+    color: red;
+  }
+  
+  .red-text {
+    color: red;
+  }
+  

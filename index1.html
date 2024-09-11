@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exam Page</title>
+  <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+  <div class="container">
+    <h2>Essay Exam</h2>
+    <form id="examForm">
+      <div class="form-group">
+        <label>Select Level:</label>
+        <div>
+          <input type="radio" id="easy" name="difficulty" value="easy">
+          <label for="easy">Easy</label>
+          <input type="radio" id="moderate" name="difficulty" value="moderate">
+          <label for="moderate">Moderate</label>
+          <input type="radio" id="hard" name="difficulty" value="hard">
+          <label for="hard">Hard</label>
+        </div>
+      </div>
+      
+      <div class="form-group">
+        <label for="essayQuestion">Essay Question:</label>
+        <textarea id="essayQuestion" name="essayQuestion" rows="10" cols="50" readonly></textarea>
+      </div>
+      
+      <div class="form-group">
+        <label for="essayAnswer">Your Essay:</label>
+        <textarea id="essayAnswer" name="essayAnswer" rows="10" cols="50"></textarea>
+        <div id="wordCount">Word Count: <span id="currentCount">0</span> / <span id="maxCount">0</span></div>
+      </div>
+      
+      <div class="form-group">
+        <button type="submit" id="submitBtn" disabled>Submit</button>
+      </div>
+    </form>
+    
+    <div id="timer" class="timer">Time Left: <span id="timeLeft">00:00</span></div>
+    <div id="warningPopup" class="popup" style="display:none;">
+      <p>Warning: Time is about to run out! Remaining time: <span id="warningTime">00:00</span></p>
+    </div>
+  </div>
+  
+  <script src="script1.js"></script>
+</body>
+</html>
